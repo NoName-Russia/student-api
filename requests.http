@@ -1,0 +1,32 @@
+### Получить всех студентов
+GET http://localhost:8080/students
+
+
+### Добавить студента
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name": "Максим",
+  "age": 18,
+  "groupName": "ИСТ-101"
+}
+
+
+### Получить студента
+GET http://localhost:8080/students/1
+
+
+### Изменить студента
+PUT http://localhost:8080/students/1
+Content-Type: application/json
+
+{
+  "name": "Максим Пурас",
+  "age": 19,
+  "groupName": "ИСТ-102"
+}
+
+
+### Удалить студента
+DELETE http://localhost:8080/students/1

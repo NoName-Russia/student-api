@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Регистрация студента</title>
+
+    <link
+            rel="stylesheet"
+            href="style.css"
+    >
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<main class="container">
+
+    <section class="card">
+
+        <div class="logo">
+            STUDENT<span>API</span>
+        </div>
+
+        <h1>Регистрация</h1>
+
+        <p class="subtitle">
+            Создайте профиль студента
+        </p>
+
+        <form id="registrationForm">
+
+            <div class="field">
+
+                <label for="firstName">
+                    Имя
+                </label>
+
+                <input
+                        id="firstName"
+                        type="text"
+                        placeholder="Введите имя"
+                        required
+                >
+
+            </div>
+
+            <div class="field">
+
+                <label for="lastName">
+                    Фамилия
+                </label>
+
+                <input
+                        id="lastName"
+                        type="text"
+                        placeholder="Введите фамилию"
+                        required
+                >
+
+            </div>
+
+            <div class="field">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                        id="email"
+                        type="email"
+                        placeholder="example@mail.ru"
+                        required
+                >
+
+            </div>
+
+            <div class="field university-field">
+
+                <label for="university">
+                    ВУЗ
+                </label>
+
+                <input
+                        id="university"
+                        type="text"
+                        placeholder="Начните вводить название ВУЗа"
+                        autocomplete="off"
+                        required
+                >
+
+                <input
+                        id="universityId"
+                        type="hidden"
+                >
+
+                <div
+                        id="suggestions"
+                        class="suggestions"
+                ></div>
+
+            </div>
+
+            <button
+                    type="submit"
+                    id="registerButton"
+            >
+                Зарегистрироваться
+            </button>
+
+        </form>
+
+        <div
+                id="message"
+                class="message"
+        ></div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
